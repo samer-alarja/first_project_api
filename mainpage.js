@@ -50,8 +50,8 @@ if(i=jsonResponse.data.rating_summary.length){
        funhr(i,leenn);
 }
 }
-// 5078 16573 9218 32319 10730
-xhttp.open("GET","https://test.dumyah.com/api/v1/reviews?product_id=10730");
+//10730  63514
+xhttp.open("GET","https://test.dumyah.com/api/v1/reviews?product_id=63514");
 xhttp.send();
 
 function addcenter(i,name,date,text,rating,verified_purchase,sshow_helpful,helpful_count,reeview_id,productid,/*image*/){
@@ -154,7 +154,7 @@ $('#linkdiv').on('click', function() {
     fuunhr(i,leenn);
 }
 }
-xhttp.open("GET","https://test.dumyah.com/api/v1/reviews?product_id=10730&current_page="+ currentPage +""); 
+xhttp.open("GET","https://test.dumyah.com/api/v1/reviews?product_id=63514&current_page="+ currentPage +""); 
 xhttp.send();
      
 
@@ -167,7 +167,7 @@ function addcenter(i,name,date,text,rating,verified_purchase,sshow_helpful,helpf
        "<p class='float' style='margin: 1px 0 0 5px;font-size: 17px;opacity: 0.5;'>on "+date+"</p><br>"+
        "</div><b id='verified' class='verified"+i+""+ currentPage +"' style='font-size: 18px;margin: 10px 0 0 4px;'>verified purshase</b>"+
        "<p style='font-size:20px;float:left;width:100%;margin-top:30px'>"+text+"</p>"+
-       "<a  onclick='funimagee("+i+","+ currentPage +")'><img src='image/girl.png' width='185px' height='185px' style='cursor: pointer;'></a>"+
+       "<a  onclick='funimagee("+i+","+currentPage+")'><img src='image/girl.png' width='185px' height='185px' style='cursor: pointer;'></a>"+
        "</div><p style='opacity: 0.3;float: left;font-size: 20px;margin: 12px 0 10px 0 ;width: 100%;'>"+helpful_count+" peaple found this helpful</p>"+
        "<input id='helpfulremove"+i+""+currentPage+"' type='button' value='helpful' style='margin:0 0 20px 0;background-color: white;border: 1px solid black;color: black;border-radius:10px;width: 100px ;height: 30px;font-size: 15px;float: left;cursor: pointer;'>"+
        "<p id='helpfulshow"+i+""+currentPage+"' style='color:green;display: none'>Thank you for your feedback.</p>"+
@@ -196,16 +196,16 @@ function addcenter(i,name,date,text,rating,verified_purchase,sshow_helpful,helpf
    $("#helpfulremove"+i+""+currentPage+"").click(function() {
     this.remove();
     $('#helpfulshow'+i+''+currentPage+'').show();
-    var reeviewid = document.getElementById("hiddden"+i+""+ currentPage +"").value;
+    var reeviewid = document.getElementById("hiddden"+i+""+currentPage+"").value;
     $.ajax({
       type:"POST",
       url:"https://test.dumyah.com/api/v1/review/helpful",
       data:{
         review_id:reeviewid,
-            },
+           },
       headers:{
-              token:'6e69fe06cb6211264a57e6e379cc7091541423640f3f440ab69112c5d298031b'
-            },
+              token:'7ad0cec6c5a113a9ef63ad37342e829a7a4ee30cb4c8606d9ad74abea5152add'
+           },
     });
     sessionStorage.setItem('helpfulremove'+i+''+currentPage+''+reeview_id+'',"true");
 });

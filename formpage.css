@@ -42,6 +42,9 @@ textarea{
 .fatherphoto{
   text-align: -webkit-center;
 }
+#img{
+  margin: 40px;
+}
 
 @media screen and (max-width:710px){
  .photo{
