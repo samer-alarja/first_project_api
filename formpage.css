@@ -1,0 +1,53 @@
+.rateYo2{
+  display: flex;
+  justify-content: center;    
+}
+form h1{
+  text-align: center;
+}
+.merge{
+  display: flex;
+  justify-content: center;
+}
+.photo{
+  height: 277px;
+  border: 1px solid rgb(211, 210, 210);
+  width: 600px;
+  margin-left: 40px;
+}
+textarea{
+  resize: none;
+  font-size: 22px;
+  opacity: 0.5;
+  padding: 25px;
+  margin-left: 40px;
+}
+.hidden2{
+  margin-top: 20px ;
+  text-align: center;
+    
+}
+.hidden2 p{
+  margin-right: 12%;
+}
+.button {
+  background-color: #ff3399;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 370px;
+  border-radius:17px;
+  margin-top: 40px;
+}
+.fatherphoto{
+  text-align: -webkit-center;
+}
+
+@media screen and (max-width:710px){
+ .photo{
+    margin-left: 0;
+  }
+ textarea{
+    margin-left: 0;
+  } 
+}

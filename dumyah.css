@@ -62,9 +62,11 @@
     display: none;
 }
 #demo{
-margin: 50px 0 50px 0;
+    margin: 50px 0 50px 0;
 }
-.float{float: left;}
+.float{
+    float: left;
+}
 .image4{
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +75,13 @@ margin: 50px 0 50px 0;
 .image4 img{
     width: 210px;
 }
-
+#linkdiv{
+    margin: 25px 0 20px 0;
+    color: #3366ff;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width:1510px){
     #navv{
         height: 93px;
@@ -127,16 +135,15 @@ margin: 50px 0 50px 0;
         display: block;
         width: 100%;
     }
-    /* #inputid{
+    #inputid{
         display: none;
-    } */
+    }
     .display{
         display: none;
     }
 
     #verified{
         display: block;
-        
     }
     .float{
         float: right;
@@ -146,6 +153,9 @@ margin: 50px 0 50px 0;
         position: absolute;
         right: 35px;
         top: 186px;
+    }
+    #Customer{
+        display: none;
     }
 }
 

@@ -1,0 +1,27 @@
+.rateYo2{
+    display: flex;
+    justify-content: center;    
+}
+.merge{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background-color:white;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    width: 400px;
+    border-radius:17px;
+    margin-top: 40px;
+    color: black;
+    border: 1px solid black;
+}
+#name{
+    width: 300px;
+}
+hr{
+    margin: auto;
+}
