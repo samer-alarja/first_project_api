@@ -6,7 +6,7 @@ $("body").append(
    "<form name='form' method='post' enctype='multipart/form-data'>"+
    "<h1 style='font-size:40px;margin:20px 100% 0 0;width:85%'>Create Review</h1>"+
    "<div class='merge'><img id='img'src='"+jsonResponse.data.product_info.image+"' width='300px' height='300px'>"+
-   "<p id='name' name='name' style='padding-top:120px;width:350px;'>"+jsonResponse.data.product_info.name+"</p></div>"+
+   "<p id='name' name='name' style='width:350px;'>"+jsonResponse.data.product_info.name+"</p></div>"+
    " <div class='rateYo2'><div id='rateYo2'></div></div>"+
    "<h1 style='font-size:33px;margin:60px 100% 20px 0;width:84%'>add the photo</h1>"+
    "<div class='fatherphoto'><div class='photo'><label for='firstimg'><i class='fa fa-camera' style='margin-top:70px;font-size:78px;color:rgb(211, 210, 210);cursor: pointer;'></i>"+

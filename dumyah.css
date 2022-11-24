@@ -9,6 +9,7 @@
 .menu{
     padding-top: 7px ;
     height: 33px;
+    white-space: nowrap;
 }
 .menu b{
     display: inline-block;

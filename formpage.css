@@ -8,6 +8,8 @@ form h1{
 .merge{
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
 .photo{
   height: 277px;
@@ -45,7 +47,9 @@ textarea{
 #img{
   margin: 40px;
 }
-
+#name{
+  overflow-wrap: break-word;
+}
 @media screen and (max-width:710px){
  .photo{
     margin-left: 0;
